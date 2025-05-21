@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightgrey;
+            margin: 0px;
+        }
+        header{
+            background-color: cadetblue;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        h1{
+            box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.606);
+            color: whitesmoke;
+        }
+        nav{
+            background-color: whitesmoke;
+            padding: 3px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.606);
+        }
+        nav > a{
+            text-decoration: none;
+            color: rgb(24, 74, 91);
+            font-weight: bold;
+            margin: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: lightslategray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        footer{
+            background-color: cornflowerblue;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        article{
+            background-color: lightslategrey;
+            color: white;
+        }
+        article > aside{
+            background-color: whitesmoke;
+            color: black;
+        }
+        #Assuntos{
+            background-color: lightcoral;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        section > p{
+            box-shadow: inset 2px 1px 6px 0px black;
+            text-align: center;
+            padding: 3px;
+        }
+        #Autor{
+            border-radius: 10px;
+            text-align:center;
+            padding: 1px;
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.581);
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: lightcoral;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="Assuntos">
+            <p>Esportes e politica</p>
+        </section>
+
+        <section id="Noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt asperiores maxime at dignissimos, earum, voluptatum provident cum saepe placeat voluptas praesentium non eius optio iste fugiat quam exercitationem ea.</p>
+                <aside id="Autor">
+                     <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Marcos Henrique</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

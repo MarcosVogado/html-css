@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagem flexivel</h1>
+    <p>A imagem desse site se altera para poder ser compátivel
+        com diversos tipos de dispositivos, como celulares, 
+        tablets e computadores.Experiemnte redimensionar a tela 
+        do seu navegador e veja como a imagem se adapta.</p>
+    </p>
+    
+    <picture>
+        <source media="(max-width: 810px)" srcset="imagens/paisagem-p.png">
+        <source media="(max-width: 1210px)" srcset="imagens/paisagem-m.png">
+        <img src="imagens/paisagem-g.png" alt=" Uma paisagem com montanhas e lago">
+    </picture>
+
+</body>
+</html>
