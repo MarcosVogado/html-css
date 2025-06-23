@@ -1,2 +1,2 @@
-Os dados foram enviados.
-Aprenda PHP q é massa!
+Os dados foram enviados!
+Aprenda PHP q é massa.
