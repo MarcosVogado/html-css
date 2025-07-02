@@ -2,3 +2,84 @@
 
 /*Todas as Midias*/
 
+/*Tipical device breakpoints
+----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablets: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+----------------------------
+*/
+/*Impressoras*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita por Marcos Henrique';
+        text-decoration: overline;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+}
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: none;}
+    img#pc {display: block;} 
+}
+/*Grandes telas*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: block;}
+    img#pc {display: none;} 
+}
